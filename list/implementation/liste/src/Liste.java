@@ -9,6 +9,14 @@ public class Liste {
         this.current = null;
     }
 
+    public void setnext() {
+        current = current.getNachfolger();
+    }
+
+    public void tofirst() {
+        current = head;
+    }
+
     public boolean aktuellesElementexistiert(){
         if (current != null) {
             return true;
